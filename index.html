@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>WATTMIND 360</title>
+  <link rel="stylesheet" href="assets/libs/watttour.css" />
+  <link rel="stylesheet" href="tour.css" />
+</head>
+<body>
+  <!-- Splash -->
+  <div id="splash">
+    <img id="splash-logo" src="assets/wattmind-logo.png" alt="WATTMIND" />
+    <div id="splash-name"></div>
+  </div>
+
+  <!-- Topbar (visivel no viewer 360) -->
+  <div id="topbar">
+    <div id="brand">
+      <img id="logo" src="assets/wattmind-logo.png" alt="WATTMIND" />
+      <div id="title">
+        <div id="tour-name"></div>
+        <div id="tour-client"></div>
+      </div>
+    </div>
+    <div id="topbar-actions">
+      <button class="btn" id="btn-plan-mode" title="Ver planta (P)">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 20 3 17V4l6 3 6-3 6 3v13l-6-3-6 3Z"/><path d="M9 7v13M15 4v13"/>
+        </svg>
+        Planta
+      </button>
+      <button class="btn btn--icon" id="btn-fullscreen" title="Ecra inteiro">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M16 21h3a2 2 0 0 0 2-2v-3M8 21H5a2 2 0 0 1-2-2v-3"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- 360 viewer -->
+  <div id="viewer"></div>
+
+  <!-- Voltar a planta -->
+  <button class="btn hidden" id="btn-back-to-plan" title="Voltar a planta (Esc)">
+    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    Planta
+  </button>
+
+  <!-- Pin de cena activa -->
+  <div id="active-pin" class="hidden"><span id="active-pin-name">—</span></div>
+
+  <!-- ============ PLAN MODE ============ -->
+  <div id="plan-mode" class="overlay">
+    <div class="plan-mode-header">
+      <div class="plan-mode-title">
+        <img src="assets/wattmind-logo.png" alt="WATTMIND" />
+        <div>
+          <h2 id="plan-mode-name">—</h2>
+          <p class="plan-mode-sub" id="plan-mode-sub">— pontos</p>
+        </div>
+      </div>
+      <div id="plan-floors" class="plan-floors hidden"></div>
+      <div class="plan-mode-search">
+        <input id="plan-search" type="text" placeholder="Procurar ponto..." />
+      </div>
+      <div class="plan-mode-actions">
+        <button class="btn" id="btn-edit-toggle" title="Modo edicao (E)">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          Editar
+        </button>
+      </div>
+    </div>
+    <div class="plan-mode-body">
+      <aside class="plan-mode-side">
+        <div class="plan-side-header" id="plan-side-count">— pontos</div>
+        <ul id="plan-side-list"></ul>
+      </aside>
+      <div id="plan-mode-stage"></div>
+    </div>
+  </div>
+
+  <!-- Bundled PSV stack -->
+  <script src="assets/libs/watttour.js"></script>
+  <script src="tour-data.js"></script>
+  <script src="tour.js"></script>
+  <script src="tour.planmode.js"></script>
+  <script src="tour.minimap.js"></script>
+  <!-- tour.calibrate.js em standby — navegacao/calibracao 360 desactivada -->>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "name": "Teste 1 Piso",
+  "client": "Wattmind QA",
+  "scenes": [
+    {
+      "id": "a",
+      "name": "Entrada",
+      "floor": "p0",
+      "filename": "pano_a.jpg",
+      "plan_x": 0.2,
+      "plan_y": 0.3,
+      "panorama": "panos/pano_a.jpg",
+      "thumbnail": "thumbs/pano_a.jpg"
+    },
+    {
+      "id": "b",
+      "name": "Sala",
+      "floor": "p0",
+      "filename": "pano_b.jpg",
+      "plan_x": 0.6,
+      "plan_y": 0.6,
+      "panorama": "panos/pano_b.jpg",
+      "thumbnail": "thumbs/pano_b.jpg"
+    }
+  ],
+  "floors": [
+    {
+      "id": "p0",
+      "name": "Piso 0",
+      "plan_filename": "planta_p0.jpg",
+      "level": 0,
+      "plan": "plans/planta_p0.jpg"
+    }
+  ],
+  "branding": {
+    "name": "WATTMIND",
+    "logo": "assets/wattmind-logo.png"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "version": 3,
+  "name": "Teste Pisos",
+  "client": "Wattmind QA",
+  "scenes": [
+    {
+      "id": "a",
+      "name": "Entrada",
+      "floor": "p0",
+      "filename": "pano_a.jpg",
+      "plan_x": 0.2,
+      "plan_y": 0.3,
+      "panorama": "panos/pano_a.jpg",
+      "thumbnail": "thumbs/pano_a.jpg"
+    },
+    {
+      "id": "b",
+      "name": "Sala Tecnica",
+      "floor": "p0",
+      "filename": "pano_b.jpg",
+      "plan_x": 0.5,
+      "plan_y": 0.5,
+      "panorama": "panos/pano_b.jpg",
+      "thumbnail": "thumbs/pano_b.jpg"
+    },
+    {
+      "id": "c",
+      "name": "Cais de carga e descarga",
+      "floor": "p0",
+      "filename": "pano_c.jpg",
+      "plan_x": 0.8,
+      "plan_y": 0.7,
+      "panorama": "panos/pano_c.jpg",
+      "thumbnail": "thumbs/pano_c.jpg"
+    },
+    {
+      "id": "d",
+      "name": "Gabinete 1",
+      "floor": "p1",
+      "filename": "pano_d.jpg",
+      "plan_x": 0.3,
+      "plan_y": 0.4,
+      "panorama": "panos/pano_d.jpg",
+      "thumbnail": "thumbs/pano_d.jpg"
+    },
+    {
+      "id": "e",
+      "name": "Open Space",
+      "floor": "p1",
+      "filename": "pano_e.jpg",
+      "plan_x": 0.7,
+      "plan_y": 0.6,
+      "panorama": "panos/pano_e.jpg",
+      "thumbnail": "thumbs/pano_e.jpg"
+    }
+  ],
+  "floors": [
+    {
+      "id": "p0",
+      "name": "Piso 0",
+      "plan_filename": "planta_p0.jpg",
+      "level": 0,
+      "plan": "plans/planta_p0.jpg"
+    },
+    {
+      "id": "p1",
+      "name": "Piso 1",
+      "plan_filename": "planta_p1.jpg",
+      "level": 1,
+      "plan": "plans/planta_p1.jpg"
+    }
+  ],
+  "branding": {
+    "name": "WATTMIND",
+    "logo": "assets/wattmind-logo.png"
+  }
+}

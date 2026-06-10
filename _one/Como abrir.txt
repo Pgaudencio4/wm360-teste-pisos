@@ -1,0 +1,16 @@
+Tour 360 — Teste 1 Piso
+Cliente: Wattmind QA
+
+COMO ABRIR
+----------
+1. Extrai TODO o conteudo do ZIP para uma pasta (botao direito > Extrair tudo).
+2. Da duplo-clique em  Abrir-Tour.bat
+   -> abre o tour no teu browser. Funciona offline, sem instalar nada.
+3. Nao feches a janela preta enquanto estiveres a ver o tour.
+   Quando acabares, fecha-a.
+
+NOTA: abrir o index.html directamente NAO funciona — o tour 360
+precisa do mini-servidor que o Abrir-Tour.bat arranca.
+
+Clica num ponto da planta para ver a foto 360 desse local.
+Gerado por WattTour - Wattmind Lda.
